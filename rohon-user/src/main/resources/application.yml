@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zhian-cn-out.mysql.rds.aliyuncs.com:3306/cdias?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    username: cdias
+    password: Cdias13967116711
+  redis:
+    host: localhost
+    password:
+    port: 6379
+  mvc:
+    static-path-pattern: classpath:/META-INF/resources/webjars/springfox-swagger-ui/**
+server:
+  port: 8080
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: cn.rohon
+rohon:
+  enable-swagger: true
+  version: 1.0.0
+
+
